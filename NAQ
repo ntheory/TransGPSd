@@ -1,0 +1,27 @@
+# This NAQ is for TransGPSd version 0.1, released on April 3rd, 2003
+
+# What is TransGPSd?
+#   This program is a GPS server (similar to gpsd) that connects to a GPS
+#   via STDIN (serial support possibly in the future) and translates the
+#   raw NMEA-0183 sentences to a usable format.
+#
+#   The external API is via SOAP.  It sends the client a structure containing
+#   all the GPS data it has (and whether or not it believes this data is valid).
+#   There are also SOAP based functions in the object to perform data conversion
+#   (knots to MPH, DMS to decimal degress, etc).
+
+# Why does everything have the pound/hash/splat/octothorpe/grid/square
+# character in front of it in this file?!
+#   This stuff used to be in the beginning of the source file until I realized
+#   that that was really stupid.  All the stuff that wasn't is just that way
+#   because it reminds me of Perl and Perl is good.
+
+# Why are you releasing this?
+#   Because GPS is cool and it ties in a lot of code and ideas I've had for
+#   other projects.  Oh, and I thought other people could use/learn from it.
+
+# This program sucks!
+#   E-mail me at ntheory@cloud9.net.  Suggest something, submit something,
+#   but please just don't let the hate fester in your head!  How else will
+#   this program get better?  OK, OK, if you really, really don't like it/me
+#   just write something better and e-mail it to me.  I love free GPS software.

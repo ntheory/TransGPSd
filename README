@@ -1,0 +1,25 @@
+# This readme is for TransGPSd version 0.1, released on April 3rd, 2003
+
+# Notes:
+#   To run TransGPSd you need a source of NMEA data.  It takes this source of
+#   data over STDIN.  I did this so it'd be a little more flexible than GPSd.
+#   If you don't have a GPS you can feed it raw NMEA by hand, cat it from a
+#   text file, or have a friend SHELLcast their GPS to you.
+
+# How to run TransGPSd (just one of the many ways):
+#   cat NMEA_SOURCE | perl TransGPSd.pl
+
+# How to get something useful out of it:
+#   Well, for that you need a SOAP application that can understand TransGPSd
+#   talk.  So far I have the following:
+#     - A tracklogger (logs positions to a MySQL database)
+#     - A GPS voice recorder (logs positions with a voice note and stores a
+#                             reference to it in a MySQL database)
+#
+#   Applications on the horizon include:
+#     - A satellite viewer (shows satellite status and position in real-time)
+#     - A moving map (shows position at least relative to previous positions,
+#                     it'll also be easy to superimpose it on a MapQuest map)
+#
+#   If none of these are on SourceForge when you read this, don't fret,
+#   they'll be there soon.
